@@ -1,6 +1,5 @@
 <?php
 require_once 'models/faqs_model.php';
-
 ?>
 <div class="container-faq">
   <h1>Preguntas frecuentes</h1>

@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
 session_start();
 require_once 'autoload.php';
 require_once 'config/db.php';
@@ -17,15 +20,15 @@ if(isset($_GET['controller'])){
 
 }elseif(!isset($_GET['controller']) && !isset($_GET['action'])){
 	$nombre_controlador = controller_default;
-	
+
 }else{
 	show_error();
 	exit();
 }
 
-if(class_exists($nombre_controlador)){	
+if(class_exists($nombre_controlador)){
 	$controlador = new $nombre_controlador();
-	
+
 	if(isset($_GET['action']) && method_exists($controlador, $_GET['action'])){
 		$action = $_GET['action'];
 		$controlador->$action();

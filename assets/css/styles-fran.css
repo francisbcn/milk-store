@@ -883,8 +883,7 @@ footer span {
 /* 
 BUSQUEDA */
 
-.container-busq,
-.container-faq {
+.container-busq {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
