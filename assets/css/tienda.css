@@ -1,10 +1,19 @@
 /* ******** /////////////   PRODUCT MAIN STUFF   //////////////*******  */
-
-
+:root {
+  --green-color: #2ab0a1;
+  --green-color-light: #b6fff6;
+  --milk-color: #fcfcfc;
+  --dark-color: #212026;
+  --white-color: #ffffff;
+  --gray-color: #212026;
+  --light-gray: #f6f6f6;
+  --transition-out: all 0.2s ease-in-out;
+  --transition-in: all 0.2s ease-in;
+  --font: "Roboto", sans-serif, "Open Sans";
+}
 .selected {
   border: 2px solid black;
 }
-
 /* Contenedor principal */
 .container2 {
   font: var(--font);
@@ -14,7 +23,6 @@
     height: 100%;
     margin: 30px;
   }
-
   /* Ventana */
   .window {
     background: var(--milk-color);
@@ -25,14 +33,12 @@
     min-height: 450px;
     position: relative;
   }
-
   /* Opciones */
   .options {
     display: flex;
     margin-top: 25px;
     justify-content: space-between;
   }
-
   /* Contenido principal */
   .main-content {
     padding: 50px 46px 25px 20px;
@@ -43,32 +49,25 @@
     height: 100%;
     flex-flow: column;
   }
-
   /* Títulos */
   h1 {
     font-family: var(--font);
     letter-spacing: .02rem;
     font-size: 3rem;
   }
-
   h3 {
     font-family: var(--font);
     color: #666;
     font-size: 1.2rem;
   }
-
   /* Descripción */
   .description {
     margin-top: 20px;
     width: 100%;
   }
-
 /*   .descriptioncorta {
-  
     color: var(--dark-color);
-  
   } */
-
   /* Ventana destacada */
   .highlight-window {
     height: 550px;
@@ -81,7 +80,6 @@
     position: relative;
     background-position: center top;
   }
-
   /* Color */
   .color {
     height: 30px;
@@ -91,7 +89,6 @@
     border: 1px solid #eee;
     position: relative;
   }
-
   /* Superposición destacada */
   .highlight-overlay {
     position: absolute;
@@ -106,7 +103,6 @@
     transition: opacity .4s ease;
     background-position: center top;
   }
-
   /* Elemento de fondo */
   .background-element {
     background: #457;
@@ -117,7 +113,6 @@
     top: 600px;
     z-index: -0;
     transform: rotate(-5deg);
-
       -ms-transform: rotate(-5deg);
           transform: rotate(-5deg);
   -webkit-transition:background .6s ease;
@@ -132,7 +127,6 @@
   top: 900px;
   z-index: -0;
   transform: rotate(-5deg);
-
     -ms-transform: rotate(-5deg);
         transform: rotate(-5deg);
 -webkit-transition:background .6s ease;
@@ -156,12 +150,9 @@
   background: #333;
   margin-right:14px;
 }
-
 .color-b {
   background: #457;
-
 }
-
 .color-picker {
   display: -webkit-box;
   display: -webkit-flex;
@@ -239,7 +230,6 @@ button:hover {
       -ms-flex-item-align:end;
           align-self:flex-end;
 }
-
 .purchase-info {
   -webkit-box-pack:justify;
   -webkit-justify-content:space-between;
@@ -254,12 +244,9 @@ button:hover {
   font-size: 40px;
   font-size:2.5rem;
 }
-
-
 .selection {
   background:#fff;
 }
-
 .range-picker {
   font-size: 16px;
   font-size:1rem;
@@ -340,20 +327,16 @@ button:hover {
 .range-picker div.active:first-child {
   border-left:1px solid #333;
 }
-
  /* VIDEO AND PRODUCTS */
-
 /*  .product-video {
   width: 600px;
   height: auto;
 }
-
 .product-images {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .product-image {
   width: 200px;
   height: 200px;
@@ -361,16 +344,11 @@ button:hover {
   border: 2px solid gray;
 }
  */
-
-
 /* BANNER TIENDA */
-
-
 .tienda-banner {
   width: 100%;
   display: block;
 }
-
 .tienda-banner h2 {
   letter-spacing: 5px;
   text-align: center;
@@ -381,26 +359,21 @@ button:hover {
   padding: 4.4rem 0;
   transition: var(--transition-out);
 }
-
 .tienda-banner .milkable {
   color: var(--green-color);
 }
-
 .tienda-banner:hover .milkable {
   color: var(--milk-color);
 }
-
 .tienda-banner:hover h2 {
   color: var(--milk-color);
   transition: var(--transition-in);
   cursor: pointer;
 }
-
 .tienda-banner:hover span.header__title {
   color: var(--green-color);
   transition: var(--transition-in);
 }
-
 /* ////////////////// TIENDA STORE.PHP */
 .gallery {
   display: grid;
@@ -409,24 +382,20 @@ button:hover {
   margin: 0 auto;
  /*  max-width: 960px; */
 }
-
 .image-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
 }
-
-/* 
+/*
 segunda opcion tienda: */
-
 /* Menu */
 .menu {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
-
 .menu-list {
   list-style: none;
   display: flex;
@@ -437,12 +406,10 @@ segunda opcion tienda: */
   padding: 0;
   margin: 0;
 }
-
 .menu-item {
   margin: 0;
   padding: 0;
 }
-
 .menu-link {
   font-size: 18px;
   font-weight: 500;
@@ -452,11 +419,9 @@ segunda opcion tienda: */
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-
 .menu-link:hover {
   background-color: #f5f5f5;
 }
-
 /* Gallery */
 .gallery {
   display: grid;
@@ -466,28 +431,23 @@ segunda opcion tienda: */
   max-width: 1200px;
   padding: 2rem;
 }
-
 .gallery-item {
   position: relative;
   overflow: hidden;
   border-radius: 5px;
 }
-
 .gallery-figure {
   position: relative;
   margin: 0;
 }
-
 .gallery-image {
   position: relative;
 }
-
 .gallery-img {
   width: 100%;
   height: auto;
   transition: transform 0.5s ease;
 }
-
 .gallery-icons {
   position: absolute;
   top: 0;
@@ -498,11 +458,9 @@ segunda opcion tienda: */
   opacity: 0;
   transition: all 0.3s ease;
 }
-
 .gallery-item:hover .gallery-icons {
   opacity: 1;
 }
-
 .gallery-icon-link {
   display: inline-block;
   font-size: 20px;
@@ -510,12 +468,10 @@ segunda opcion tienda: */
   padding: 10px;
   transition: all 0.3s ease;
 }
-
 .gallery-icon-link:hover {
   color: #fff;
   background-color: #222;
 }
-
 .gallery-cart {
   position: absolute;
   bottom: 0;
@@ -529,133 +485,203 @@ segunda opcion tienda: */
   opacity: 0;
   transition: all 0.3s ease;
 }
-
 .gallery-item:hover .gallery-cart {
   opacity: 1;
 }
-
 .gallery-description {
   margin: 10px 0;
   font-size: 16px;
   line-height: 1.2;
 }
-
 .gallery-price {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #222;
   margin: 10px 0;
 }
-
+/* PARTE ABAJO DE LAS FOTOS DE RTIENDA */
+.gallery-fig {
+  position: relative;
+  text-align: center;
+}
+.gallery-description {
+  font-size: 16px;
+  color: var(--dark-color);
+  margin-bottom: 10px;
+}
+.gallery-price {
+  font-size: 18px;
+  color: var(--green-color);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.gallery-fig a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+.gallery-fig a:hover {
+  color: var(--green-color);
+}
+.gallery-fig i {
+  margin: 0 5px;
+}
+#gallery-fig1 {
+  display: none;
+}
+/* .gallery-fig{
+  display: block;
+} */
+/* #gallery-fig1 {
+  display: none;
+} */
 /* Pantallas de tamaño medio */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-
   .container2 {
     margin: 20px;
   }
-
   .window {
     width: 80%;
     min-height: 400px;
   }
-
   .main-content {
     padding: 30px 26px 15px 15px;
   }
-
   h1 {
     font-size: 2rem;
   }
-
   h3 {
     font-size: 1rem;
   }
-
   .description {
     margin-top: 15px;
   }
-
   .highlight-window {
     height: 450px;
     width: 60%;
   }
-
   .background-element {
     height: 200px;
     top: 400px;
   }
-
   .background-element2 {
     top: 700px;
   }
-
   .color-picker {
     width: 60px;
   }
-
   button {
     height: 30px;
     font-size: 0.9rem;
   }
-
-
     .menu-list {
       justify-content: center;
     }
-
-
     .gallery {
       grid-template-columns: repeat(2, 1fr);
     }
+/* PARTE ABAJO DE LAS FOTOS DE RTIENDA */
+/*     .gallery-fig{
+      display:none;
+    }
+    #gallery-fig1 {
+      display: block;
+    } */
+    .gallery-fig {
+      display: none;
+    }
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+    }
+    #gallery-fig1 {
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+   /*  margin: 10px; */
+    background-color: var(--light-gray);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+    .gallery-description {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .gallery-add{
+      background-color: var(--dark-color);
+      color: var(--milk-color);
+      border: none;
+      border-radius: 2px;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: var(--transition-out);
+      margin-bottom: 1rem;
+    }
+    .gallery-price {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .gallery-price:before {
+      content: "Precio: ";
+    }
+    .gallery-price:after {
+      content: " €";
+    }
+    .gallery-fig a {
+      margin: 2rem;
+      font-size: 14px;
+    }
+    .gallery-fig i {
+      background-color: var(--green-color-light) !important ;
+      margin: 1rem;
+    }
+    .figure-icons{
+      display: flex;
+      justify-content: space-evenly;
+      gap:4rem ;
+      margin-bottom: 1rem;
+    }
   }
-
-
 /* Pantallas pequeñas */
 @media only screen and (max-width: 600px) {
-
   .container2 {
     margin: 10px;
   }
-
   .window {
     width: 90%;
     min-height: 350px;
   }
-
   .main-content {
     padding: 20px 16px 10px 10px;
   }
-
   h1 {
     font-size: 1.6rem;
   }
-
   h3 {
     font-size: 0.9rem;
   }
-
   .description {
     margin-top: 10px;
   }
-
   .highlight-window {
     height: 300px;
     width: 80%;
   }
-
   .background-element {
     height: 150px;
     top: 300px;
   }
-
   .background-element2 {
     top: 550px;
   }
-
   .color-picker {
     width: 50px;
   }
-
   button {
     height: 25px;
     font-size: 0.8rem;
@@ -664,17 +690,121 @@ segunda opcion tienda: */
     margin: 10px 0px 0px;
     padding: 2rem 0.5rem;
     }
-
      .gallery {
       padding: 1rem;
     grid-template-columns: 1fr;
   }
-
+/* PARTE ABAJO DE LAS FOTOS DE RTIENDA */
+.gallery-fig {
+  display: none;
 }
-
-
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+#gallery-fig1 {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 10px;
+/*  margin: 10px; */
+background-color: var(--light-gray);
+border-radius: 5px;
+box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.gallery-description {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.gallery-add{
+  background-color: var(--dark-color);
+  color: var(--milk-color);
+  border: none;
+  border-radius: 2px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition-out);
+  margin-bottom: 1rem;
+}
+.gallery-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.gallery-price:before {
+  content: "Precio: ";
+}
+.gallery-price:after {
+  content: " €";
+}
+.gallery-fig a {
+  margin: 2rem;
+  font-size: 14px;
+}
+.gallery-fig i {
+  background-color: var(--green-color-light) !important ;
+  margin: 1rem;
+}
+.figure-icons{
+  display: flex;
+  justify-content: space-evenly;
+  gap:4rem ;
+  margin-bottom: 1rem;
+}
+}
+/* ////////////////
+@media screen and (min-width: 768px) {
+  .gallery-fig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--milk-color);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  .gallery-description {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .gallery-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--green-color);
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #gallery-fig1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  #gallery-fig1 a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: var(--green-color);
+    transition: var(--transition-out);
+  }
+  #gallery-fig1 a:hover {
+    color: var(--white-color);
+    background-color: var(--green-color);
+    transition: var(--transition-in);
+  }
+  #gallery-fig1 i {
+    margin-right: 5px;
+  }
+ */
+/* //////////////////// */
 /* #tienda-fotos{
-  display: flex; 
+  display: flex;
   justify-content:space-around;
   align-items: center;
 } */
@@ -686,18 +816,15 @@ segunda opcion tienda: */
   height: 400px;
   overflow: hidden;
 }
-
 .slide-container {
   display: flex;
   height: 100%;
 }
-
 .slide {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .nav {
   position: absolute;
   top: 50%;
@@ -706,7 +833,6 @@ segunda opcion tienda: */
   display: flex;
   justify-content: space-between;
 }
-
 .prev,
 .next {
   background: none;

@@ -4,7 +4,6 @@ require_once 'models/producto.php';
 require_once 'models/tallas.php';
 require_once 'models/colores.php';
 ?>
-
 <?php $categorias = Utils::showCategorias(); ?>
 <nav id="menu2">
 	<ul>
@@ -15,7 +14,6 @@ require_once 'models/colores.php';
 		<?php endwhile; ?>
 	</ul>
 </nav>
-
 <?php
 $product = new Producto();
 $productos = $product->getAll();
@@ -38,24 +36,30 @@ $productos = $product->getAll();
           </div>
           <a href="<?= base_url ?>carrito/add&id=<?= $product->id ?>" class="gallery-cart">Añade al Carrito</a>
         </div>
-        <figcaption>
+		<figcaption class="gallery-fig">
           <p class="gallery-description"><?= $product->descripcion_corta ?></p>
-          <p class="gallery-price"><?= $product->precio ?>€</p>
+          <p class="gallery-price"><?= $product->precio ?></p>
+        </figcaption>
+        <figcaption id="gallery-fig1">
+          <p class="gallery-description"><?= $product->descripcion_corta ?></p>
+          <p class="gallery-price"><?= $product->precio ?></p>
+		  <p class="gallery-add"><a href="<?= base_url ?>carrito/add&id=<?= $product->id ?>">Añade al Carrito</a></p>
+		  <div class="figure-icons">
+			 <a  href="#"> <i class="fas fa-share"></i></a>
+       	<a href="<?= base_url ?>producto/ver&id=<?= $product->id ?>"> <i class="fas fa-search"></i></a>
+		  </div>
         </figcaption>
       </figure>
     </div>
   <?php endwhile; ?>
 </div>
-
-
-
+<!--  -->
 <!-- <?php
 require_once 'models/categoria.php';
 require_once 'models/producto.php';
 require_once 'models/tallas.php';
 require_once 'models/colores.php';
 ?>
-
 <?php $categorias = Utils::showCategorias(); ?>
 <nav id="menu2">
 	<ul>
@@ -66,14 +70,12 @@ require_once 'models/colores.php';
 		<?php endwhile; ?>
 	</ul>
 </nav>
-
 <?php
 $product = new Producto();
 $productos = $product->getAll();
 ?>
 <div class="gallery">
 	<?php while ($product = $productos->fetch_object()) : ?>
-
 		<div id="image-container">
 			<figure class="art-fotos">
 				<div class="image">
@@ -94,9 +96,7 @@ $productos = $product->getAll();
 					<p class="descriptioncorta"><?= $product->descripcion_corta ?></p>
 					<p class="price"><?= $product->precio ?>€</p>
 				</figcaption>
-				
 			</figure>
 		</div>
-
 	<?php endwhile; ?>
 </div> -->

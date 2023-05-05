@@ -34,7 +34,7 @@ if (isset($_GET['busqueda']) && !empty(trim($_GET['busqueda']))) {
 		<header>
 			<section class="header__etsy">
 				<h1> Tienda de ropa LGTBIQ+ The Milk Barcelona</h1>
-				<p>Encuentra nuestra tienda artesanal en <span><a class="etsy-nombre" target="_blank" href="http s://www.etsy.com/es/shop/TheMilkBarcelona?ref=profile_header">Etsy</a></span></p>
+				<p>Encuentra nuestra tienda artesanal en <span><a class="etsy-nombre" target="_blank" href="https://www.etsy.com/shop/TheMilkBarcelona?ref=shop-header-name&listing_id=1237722723">Etsy</a></span></p>
 				<?php if (!isset($_SESSION['identity'])):?>
 					<a href="<?= base_url ?>usuario.php"><i class="fa-regular fa-circle-user"></i><span class="milkiwer-inicio">#MILKIWER</span> </a>
 				<?php else : ?>
@@ -63,7 +63,7 @@ if (isset($_GET['busqueda']) && !empty(trim($_GET['busqueda']))) {
 						<li><a href="<?= base_url ?>faq.php">FAQ</a></li>
 					</ul>
 				</nav>
-				<div id="burguer" onclick="openNav()">&#9776;</div>
+				<div id="burguer" onclick="openNav()"><i class="fa-solid fa-bars" alt="burguer menu mobile" title="menu sidebar the milk barcelona"></i></div>
 				<nav class=" sidenav" id="mySidenav">
 					<ul>
 						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -98,7 +98,7 @@ if (isset($_GET['busqueda']) && !empty(trim($_GET['busqueda']))) {
 
 <!-- 	//////////////////////// ESTE DER ABAJO ES EL QUE FUNCIONA, PERO SIN EL MENU SIDE BAR DE LAS QUERIES: -->
 
-<!-- 
+<!--
 <?php
 require_once('models/Consulta.php');
 require_once('models/BaseMysql.php');
@@ -143,7 +143,7 @@ if (isset($_GET['busqueda']) && !empty(trim($_GET['busqueda']))) {
 		<header>
 			<section class="header__etsy">
 				<h1> Tienda de ropa LGTBIQ+ The Milk Barcelona</h1>
-				<p>Encuentra nuestra tienda artesanal en <span><a class="etsy-nombre" target="_blank" href="http s://www.etsy.com/es/shop/TheMilkBarcelona?ref=profile_header">Etsy</a></span></p>
+				<p>Encuentra nuestra tienda artesanal en <span><a class="etsy-nombre" target="_blank" href="https://www.etsy.com/shop/TheMilkBarcelona?ref=shop-header-name&listing_id=1237722723">Etsy</a></span></p>
 
 				<?php if (!isset($_SESSION['identity'])) : ?>
 					<a href="<?= base_url ?>usuario.php"><i class="fa-regular fa-circle-user"></i><span class="milkiwer-inicio">#MILKIWER</span> </a>
@@ -185,7 +185,7 @@ if (isset($_GET['busqueda']) && !empty(trim($_GET['busqueda']))) {
 
 						<li><a href="<?= base_url ?>carrito/index"><i class="fa-solid fa-cart-arrow-down" alt="carrito the milk Barcelona" title="carrito the milk barcelona"></i></a></li>
 
-						<li><a href="<?= base_url ?>busqueda.php"><i class="fa-solid fa-magnifying-glass" alt="busqueda the milk Barcelona" title="busqueda the milk barcelona"></i></a></li>	
+						<li><a href="<?= base_url ?>busqueda.php"><i class="fa-solid fa-magnifying-glass" alt="busqueda the milk Barcelona" title="busqueda the milk barcelona"></i></a></li>
 					</ul>
 				</nav>
 			</div>

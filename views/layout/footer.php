@@ -6,9 +6,9 @@
 		<nav>
 			<ul>
 				<li><a target="_blank" href="https://www.instagram.com/themilkbarcelona/"><i class="fa-brands fa-instagram" alt="instagram the milk Barcelona" title="instagram the milk barcelona"></i></a></li>
-				<li><a href="#"><i class="fa-brands fa-square-twitter" alt="twitter the milk Barcelona" title="twitter the milk barcelona"></i></a></li>
-				<li><a href="#"><i class="fa-brands fa-tiktok" alt="tiktok the milk Barcelona" title="tiktok the milk barcelona"></i></a></li>
-				<li><a href="#"><i class="fa-brands fa-square-pinterest" alt="pinterest the milk Barcelona" title="pinterest the milk barcelona"></i></a></li>
+				<li><a target="_blank" href="https://twitter.com/milkbarcelona_"><i class="fa-brands fa-square-twitter" alt="twitter the milk Barcelona" title="twitter the milk barcelona"></i></a></li>
+				<li><a target="_blank" href="https://www.tiktok.com/@themilkbarcelona"><i class="fa-brands fa-tiktok" alt="tiktok the milk Barcelona" title="tiktok the milk barcelona"></i></a></li>
+				<li><a  target="_blank" href="https://www.pinterest.es/themilkbarcelona/?eq=themilkbarcelona&etslf=3712"><i class="fa-brands fa-square-pinterest" alt="pinterest the milk Barcelona" title="pinterest the milk barcelona"></i></a></li>
 			</ul>
 		</nav>
 	</div>

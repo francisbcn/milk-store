@@ -248,7 +248,7 @@ header .menus {
   flex-wrap: wrap;
   justify-content: center;
 }
-.art-fotos { 
+.art-fotos {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -762,16 +762,21 @@ footer {
 
 .social-cont {
   background-color: #212026;
+  width: 100% !important;
 }
 
 .social-cont ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 6rem;
   list-style: none;
   margin: 20px 0px;
   font-size: 30px;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  max-width: 90vw;
 }
 
 .social-cont i {
@@ -880,7 +885,7 @@ footer span {
   font-size:30px;
   cursor:pointer;
 }
-/* 
+/*
 BUSQUEDA */
 
 .container-busq {
@@ -955,7 +960,6 @@ BUSQUEDA */
   }
 
   #burguer {
-    font-size: 2.1rem;
     order: 1;
     display: flex;
     margin-left: 0.6rem;
@@ -1068,6 +1072,10 @@ BUSQUEDA */
       width: 100% !important;
     }
 
+    .container, .container-sm {
+      max-width: 100vw !important;
+    }
+
   /*   .footer-cont {
       display: none;
     } */
@@ -1080,7 +1088,7 @@ BUSQUEDA */
 
   .productos-list h2 {
     font-size: 1.2em;
-  }   
+  }
 
 }
 
@@ -1115,7 +1123,7 @@ BUSQUEDA */
   }
 
   #burguer {
-    font-size: 2.1rem;
+/*     font-size: 2.1rem; */
     order: 1;
     display: flex;
     margin-left: 0.6rem;
@@ -1188,22 +1196,41 @@ BUSQUEDA */
 
 
 /*   FOOTER */
-.foot-nav1 ul {
-  margin: 0;
+footer {
+  padding: 30px 0;
 }
 
-.foot-nav2 ul {
-  margin: 0;
+.foot-nav2,
+.foot-nav1{
+  display: none !important;
 }
 
-footer img {
-  margin: 30px 0px 0px 0px;
+.footer-cont {
+  flex-direction: column;
+  align-items: center;
 }
 
-/* busqueda  */
+.container, .container-sm {
+  max-width: 100vw !important;
+}
 
-.productos-list li {
-  width: 100%;
+/* .social-cont ul {
+  font-size: 24px;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.footer-cont .foot-nav1 ul {
+  margin: 30px 0 0 0;
+  text-align: center;
+}
+
+.footer-cont .foot-nav2 {
+  display: none;
+} */
+
+.derechos {
+  font-size: 14px;
 }
 }
 
